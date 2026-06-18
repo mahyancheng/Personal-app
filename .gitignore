@@ -1,0 +1,18 @@
+# Xcode / build
+build/
+DerivedData/
+*.xcworkspace
+!default.xcworkspace
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# XcodeGen output (regenerate with `xcodegen`)
+Forge.xcodeproj/
+
+# macOS
+.DS_Store
+
+# Secrets — never commit your real keys
+Secrets.plist
+*.local

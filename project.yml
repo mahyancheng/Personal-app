@@ -1,0 +1,27 @@
+name: Forge
+options:
+  bundleIdPrefix: com.personalapp
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    GENERATE_INFOPLIST_FILE: "NO"
+targets:
+  Forge:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+    settings:
+      base:
+        INFOPLIST_FILE: Resources/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.personalapp.forge
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "5.0"
+        CODE_SIGN_STYLE: Automatic
+        # Leave DEVELOPMENT_TEAM empty here and pick your team in Xcode's
+        # Signing & Capabilities tab (your free Apple ID works).
+        DEVELOPMENT_TEAM: ""
